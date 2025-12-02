@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop Details</title>
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Images/Home/logo.webp" alt="Suxnix">
+            </div>
+
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="Index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Index.html">Home One</a></li>
+                        <li><a href="Index.html">Home Two</a></li>
+                        <li><a href="Index.html">Home Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="Index.html#features">Features</a></li>
+                <li><a href="Index.html#product">Product</a></li>
+                <li><a href="Index.html#ingredient">Ingredient</a></li>
+                <li><a href="Index.html#pricing">Pricing</a></li>
+                <li class="dropdown">
+                    <a href="#">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Ourshop.html">Our Shop</a></li>
+                        <li><a href="Shopdetail.html">Shop Details</a></li>
+                        <li><a href="Cart.html">Cart Page</a></li>
+                        <li><a href="Login.html">Login Page</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">News</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="OurBlog.html">Our Blog</a></li>
+                        <li><a href="Blogdetails.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <li class="cart-btn">
+                    <a href="#" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge">0</span>
+                    </a>
+                    
+                    <!-- Dropdown is INSIDE this li -->
+                    <div class="cart-dropdown">
+                        <p class="empty-text">Your cart is empty</p>
+                        <hr>
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span>Tk 0.00</span>
+                        </div>
+                        <a href="#" class="view-cart-btn" style="color: white; font-size: 15px;">VIEW CART</a>
+                        <a href="#" class="checkout-btn" style="color: white; font-size: 15px;">CHECKOUT</a>
+                    </div>
+                </li>
+                <a href="#" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="search-overlay" id="searchOverlay">
+                    <input type="text" placeholder="Enter your keyword..." class="search-input">
+                    <i class="fas fa-search search-icon-overlay"></i>
+                </div>
+                <div class="search-bg" id="searchBg"></div>
+
+                <a href="#" class="grid-icon">
+                    <i class="fa-solid fa-border-all" style="color:#fff;"></i>
+                </a>
+                
+                <!-- Overlay Background -->
+                <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+                <!-- Right Sidebar Menu -->
+                <div class="sidebar-menu" id="sidebarMenu">
+                    <button class="sidebar-close" id="sidebarClose">&times;</button>
+
+                    <div class="sidebar-content">
+                        <h2>GETTING ALL OF THE <span>NUTRIENTS</span> YOU NEED SIMPLY CANNOT BE DONE WITHOUT SUPPLEMENTS.</h2>
+                        <p>Nam libero tempore, cum soluta nobis eligendi cumque quod placeat facere possimus assumenda omnis dolor repellendu autem officiis</p>
+
+                        <h4>+1 599 162 4545<br> INFO@EXAMPLE.COM</h4>
+            
+                        <p style="margin-bottom: 0%;">5689 Lotaso Terrace, Culver City, CA, United States</p>
+
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MOBILE SIDEBAR MENU -->
+            <div class="mobile-sidebar" id="mobileSidebar">
+                <div class="sidebar-header">
+                    <h2>Menu</h2>
+                    <button id="closeSidebar" class="close-btn">&times;</button>
+                </div>
+
+                <ul class="sidebar-links">
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Home Style 1</a></li>
+                            <li><a href="#">Home Style 2</a></li>
+                            <li><a href="#">Home Style 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-title"><a href="#">Featured</a></li>
+                    <li class="dropdown-title"><a href="#">Products</a></li>
+                    <li class="dropdown-title"><a href="#">Ingredient</a></li>
+                    <li class="dropdown-title"><a href="#">Pricing</a></li>
+
+                    <!-- SHOP DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>Shop</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Shop Grid</a></li>
+                            <li><a href="#">Shop List</a></li>
+                            <li><a href="#">Single Product</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NEWS DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>News</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Latest News</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Articles</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-title"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <section class="page-hero">
+            <img src="Images/Blog/left.avif" alt="left" class="header-left">
+            <img src="Images/Blog/right.avif" alt="right" class="header-right">
+            <div class="page-hero-bg"></div>
+            <div class="inner">
+            <h1>SHOP DETAILS</h1>
+            <div class="breadcrumbs">Home &nbsp;|&nbsp; Shop Details</div>
+            </div>
+        </section>
+
+        <section class="Shop-product-details">
+            
+            <!-- LEFT: Product Image -->
+            <div class="Shop-product-images">
+                <img src="Images/Shop-Details/1.webp" class="main-img" alt="Product">
+
+                <div class="Shop-thumbs">
+                    <img src="Images/Shop-Details/2.avif" alt="">
+                    <img src="Images/Shop-Details/3.avif" alt="">
+                    <img src="Images/Shop-Details/4.avif" alt="">
+                    <img src="Images/Shop-Details/5.avif" alt="">
+                </div>
+            </div>
+
+            <!-- RIGHT: Product Content -->
+            <div class="Shop-product-info">
+
+                <h2 class="Shop-title">ANTIAGING AND LONGEVITY</h2>
+
+                <div class="Shop-product-meta">
+                    <span><strong>Vendor:</strong> Fashion Shofy Ecommerce</span>
+                    <span class="Shop-rating">⭐⭐⭐⭐⭐ (4.5)</span>
+                    <span><strong>Id:</strong> 7827143852089</span>
+                </div>
+
+                <p class="Shop-price">TK 49.99 <span class="Shop-stock"> - INSTOCK</span></p>
+
+                <p class="Shop-short-desc">
+                    The true strength of Suxnix: Whey Protein Isolates (WPIs) are the purest
+                    form of whey protein that currently exists. WPIs are costly to use, but rate among 
+                    the best...
+                </p>
+
+                <ul class="Shop-product-attrs">
+                    <li><i class="fa-solid fa-circle-check bullet"></i> <strong>Title:</strong> Default Title</li>
+                    <li><i class="fa-solid fa-circle-check bullet"></i> <strong>Vendor:</strong> Fashion Shofy Ecommerce</li>
+                    <li><i class="fa-solid fa-circle-check bullet"></i> <strong>Type:</strong> Supplement</li>
+                </ul>
+
+                <div class="Shop-cart-controls">
+                    <button class="Shop-qty-btn">-</button>
+                    <input type="text" value="1">
+                    <button class="Shop-qty-btn">+</button>
+
+                    <button class="Shop-add-cart">ADD TO CART</button>
+                </div>
+
+                <div class="Shop-tags">
+                    <strong>Tags:</strong> medicine, protein
+                </div>
+
+                <div class="Shop-categories">
+                    <strong>Categories:</strong> Nutrition, Protein
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Shop-tabs-container">
+
+            <!-- TAB BUTTONS -->
+            <div class="Shop-tabs">
+                <button class="Shop-tab active" data-tab="desc">Description</button>
+                <button class="Shop-tab" data-tab="info">Additional Information</button>
+            </div>
+
+            <!-- TAB CONTENT : DESCRIPTION -->
+            <div id="desc" class="Shop-tab-content active">
+                <h3 class="Shop-section-title">THE TRUE STRENGTH OF SUXNIX :</h3>
+
+                <p>
+                   Whey Protein Isolates (WPIs) are the purest form of whey protein that currently exists. 
+                   WPIs are costly to use, but rate among the best proteins that money can buy. 
+                   That’s why they’re the first ingredient you read on the Gold Standard 100% Whey™ label. 
+                   By using WPI as the primary ingredient along with premium ultra-filtered whey protein concentrate (WPC), we’re able to pack 24 grams of protein into every serving to support your muscle building needs after training. ON’attention to detail also extends to mixability. This superior quality powder has been instantized to mix easliy using a shaker cup or just a glass and spoon. 
+                   There’s no doubt that this is the standard by which all other whey proteins are measured.
+                </p>
+
+                <h3 class="Shop-section-title">SUXNIX THE BASICS :</h3>
+                <ul class="Shop-feature-list">
+                    <li><i class="fa-solid fa-check"></i> 82% Protein by Weight</li>
+                    <li><i class="fa-solid fa-check"></i> Whey Protein Isolates Ingredient</li>
+                    <li><i class="fa-solid fa-check"></i> Naturally Occurring Glutamine</li>
+                    <li><i class="fa-solid fa-check"></i> More than 5g of BCAAs</li>
+                    <li><i class="fa-solid fa-check"></i> Banned Substance Tested</li>
+                </ul>
+            </div>
+
+            <!-- TAB CONTENT : ADDITIONAL INFO -->
+            <div id="info" class="Shop-tab-content product-additional-info">
+                <h2>Additional Information</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Calories</td>
+                        <td>110</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Fat</td>
+                        <td>1kg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturated Fat</td>
+                        <td>0.5g</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cholesterol</td>
+                        <td>40mg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Carbohydrate</td>
+                        <td>2g</td>
+                    </tr>
+
+                    <tr>
+                        <td>Protein</td>
+                        <td>24g</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Sugars</td>
+                        <td>2g</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sodium</td>
+                        <td>100mg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Calcium</td>
+                        <td>140mg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Potassium</td>
+                        <td>160mg</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Product Cards Section -->
+        <section class="product-cards-section">
+            <h2 class="section-heading">RELATED PRODUCTS</h2>
+            <div class="product-cards">
+                <div class="card">
+                    <div class="img-bg grey">
+                        <img src="Images/Shop-Details/R-1.avif" alt="Serious Mass" />
+                    </div>
+                    <h3>ANTIAGING AND LONGEVITY</h3>
+                    <p class="productprice">Tk 49.99</p>
+                    <div class="rating">
+                        <span>(0)</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-bg green">
+                        <img src="Images/Shop-Details/R-2.avif" alt="Amino Energy" />
+                    </div>
+                    <h3>WHEY PROTIEN POWDER</h3>
+                    <p class="productprice">Tk 85.99</p>
+                    <div class="rating">
+                        <span>(0)</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-bg purple">
+                        <img src="Images/Shop-Details/R-3.avif" alt="Protein Whey" />
+                    </div>
+                    <h3>SERIOUS MASS 2KG</h3>
+                    <p class="productprice">Tk 85.99</p>
+                    <div class="rating">
+                        <span>(0)</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SLICK SLIDER -->
+        <section class="footer-slider" aria-label="footer gallery">
+            <div class="bg"></div>
+            <div class="slider">
+                <!-- Use your real image file paths. These are sample names. -->
+                <div class="slide-wrap"><img src="Images/Image-Slider/1.avif" alt="img1"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/2.avif" alt="img2"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/3.avif" alt="img3"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/4.avif" alt="img4"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/5.avif" alt="img5"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/6.avif" alt="img6"></div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer class="footer">    
+            <img src="Images/Footer/left.avif" class="footerimg-left" alt="">
+            <img src="Images/Footer/right.avif" class="footerimg-right" alt="">
+            <div class="footer-container">
+                <!-- ABOUT/LOGO -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="Images/Footer/logo.webp" alt="Suxnix Logo">
+                    </div>
+                    <p>
+                        Making beauty especially relating complot especial common questions tend to recur through posts or queries
+                        standards vary orem donor command tei.
+                    </p>
+                </div>
+
+                <!-- ABOUT LINKS -->
+                <div class="footer-links">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Product</a></li>
+                    </ul>
+                </div>
+
+                <!-- SUPPORT LINKS -->
+                <div class="footer-links">
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="footer-contact">
+                    <h3>CONTACT US</h3>
+                    <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-phone"></i> +1 31-6555-0116
+                    </div>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-envelope"></i> Suxnix@example.com
+                    </div>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-globe"></i> www.suxnixdomain.com
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Suxnix All Rights Reserved.</p>
+                <img src="Images/Footer/payment.avif" alt="Payment Methods">
+            </div>
+        </footer>
+
+
+        <!-- scripts: jQuery first, then Slick -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
+        <!-- Loading the Java Script -->
+        <script src="script.js"></script>
+    </body>
+</html>

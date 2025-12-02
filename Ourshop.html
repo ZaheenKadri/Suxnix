@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Shop</title>
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Images/Home/logo.webp" alt="Suxnix">
+            </div>
+
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="Index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Index.html">Home One</a></li>
+                        <li><a href="Index.html">Home Two</a></li>
+                        <li><a href="Index.html">Home Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="Index.html#features">Features</a></li>
+                <li><a href="Index.html#product">Product</a></li>
+                <li><a href="Index.html#ingredient">Ingredient</a></li>
+                <li><a href="Index.html#pricing">Pricing</a></li>
+                <li class="dropdown">
+                    <a href="#">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Ourshop.html">Our Shop</a></li>
+                        <li><a href="Shopdetail.html">Shop Details</a></li>
+                        <li><a href="Cart.html">Cart Page</a></li>
+                        <li><a href="Login.html">Login Page</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">News</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="OurBlog.html">Our Blog</a></li>
+                        <li><a href="Blogdetails.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <li class="cart-btn">
+                    <a href="#" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge">0</span>
+                    </a>
+                    
+                    <!-- Dropdown is INSIDE this li -->
+                    <div class="cart-dropdown">
+                        <p class="empty-text">Your cart is empty</p>
+                        <hr>
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span>Tk 0.00</span>
+                        </div>
+                        <a href="#" class="view-cart-btn" style="color: white; font-size: 15px;">VIEW CART</a>
+                        <a href="#" class="checkout-btn" style="color: white; font-size: 15px;">CHECKOUT</a>
+                    </div>
+                </li>
+                <a href="#" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="search-overlay" id="searchOverlay">
+                    <input type="text" placeholder="Enter your keyword..." class="search-input">
+                    <i class="fas fa-search search-icon-overlay"></i>
+                </div>
+                <div class="search-bg" id="searchBg"></div>
+
+                <a href="#" class="grid-icon">
+                    <i class="fa-solid fa-border-all" style="color:#fff;"></i>
+                </a>
+                
+                <!-- Overlay Background -->
+                <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+                <!-- Right Sidebar Menu -->
+                <div class="sidebar-menu" id="sidebarMenu">
+                    <button class="sidebar-close" id="sidebarClose">&times;</button>
+
+                    <div class="sidebar-content">
+                        <h2>GETTING ALL OF THE <span>NUTRIENTS</span> YOU NEED SIMPLY CANNOT BE DONE WITHOUT SUPPLEMENTS.</h2>
+                        <p>Nam libero tempore, cum soluta nobis eligendi cumque quod placeat facere possimus assumenda omnis dolor repellendu autem officiis</p>
+
+                        <h4>+1 599 162 4545<br> INFO@EXAMPLE.COM</h4>
+            
+                        <p style="margin-bottom: 0%;">5689 Lotaso Terrace, Culver City, CA, United States</p>
+
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MOBILE SIDEBAR MENU -->
+            <div class="mobile-sidebar" id="mobileSidebar">
+                <div class="sidebar-header">
+                    <h2>Menu</h2>
+                    <button id="closeSidebar" class="close-btn">&times;</button>
+                </div>
+
+                <ul class="sidebar-links">
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Home Style 1</a></li>
+                            <li><a href="#">Home Style 2</a></li>
+                            <li><a href="#">Home Style 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-title"><a href="#">Featured</a></li>
+                    <li class="dropdown-title"><a href="#">Products</a></li>
+                    <li class="dropdown-title"><a href="#">Ingredient</a></li>
+                    <li class="dropdown-title"><a href="#">Pricing</a></li>
+
+                    <!-- SHOP DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>Shop</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Shop Grid</a></li>
+                            <li><a href="#">Shop List</a></li>
+                            <li><a href="#">Single Product</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NEWS DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>News</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Latest News</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Articles</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-title"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <section class="page-hero">
+            <img src="Images/Blog/left.avif" alt="left" class="header-left">
+            <img src="Images/Blog/right.avif" alt="right" class="header-right">
+            <div class="page-hero-bg"></div>
+            <div class="inner">
+                <h1>OUR SHOP</h1>
+                <div class="breadcrumbs">Home &nbsp;|&nbsp; Our Shop</div>
+            </div>
+        </section>
+
+<div class="ourshop-page-wrap">
+
+    <div class="ourshop-results-header">
+      <div class="ourshop-results-left">Showing 1–8 of 8 results</div>
+      <div>
+        <select class="ourshop-sort-select" aria-label="Sort products">
+          <option>Featured</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="ourshop-shop-container">
+
+      <!-- LEFT: Product grid -->
+      <div class="ourshop-products-area">
+        <div class="ourshop-product-cards">
+
+          <!-- CARD 1 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg grey">
+              <img src="Images/Our-Shop/1.avif" alt="">
+            </div>
+            <div class="ourshop-category">Nutrition</div>
+            <h3>ANTIAGING AND LONGEVITY</h3>
+            <p class="ourshop-productprice">Tk 49.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg green">
+              <img src="Images/Our-Shop/2.avif" alt="">
+            </div>
+            <div class="ourshop-category">Fat Burners</div>
+            <h3>BOX FULL OF MUSCLES</h3>
+            <p class="ourshop-productprice">Tk 85.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg purple">
+              <img src="Images/Our-Shop/3.avif" alt="">
+            </div>
+            <div class="ourshop-category">Medicine</div>
+            <h3>PROTEIN POWDER 2KG</h3>
+            <p class="ourshop-productprice">Tk 85.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg blue">
+              <img src="Images/Our-Shop/4.avif" alt="">
+            </div>
+            <div class="ourshop-category">Nutrition</div>
+            <h3>WHEY PROTEIN POWDER</h3>
+            <p class="ourshop-productprice">Tk 49.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg blue">
+              <img src="Images/Our-Shop/5.avif" alt="">
+            </div>
+            <div class="ourshop-category">Protein</div>
+            <h3>WHEY PROTEIN POWDER</h3>
+            <p class="ourshop-productprice">Tk 49.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg blue">
+              <img src="Images/Our-Shop/6.avif" alt="">
+            </div>
+            <div class="ourshop-category">Protein</div>
+            <h3>WHEY PROTEIN POWDER</h3>
+            <p class="ourshop-productprice">Tk 49.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 7 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg blue">
+              <img src="Images/Our-Shop/7.avif" alt="">
+            </div>
+            <div class="ourshop-category">Protein</div>
+            <h3>WHEY PROTEIN POWDER</h3>
+            <p class="ourshop-productprice">Tk 49.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 8 -->
+          <article class="ourshop-card">
+            <div class="ourshop-img-bg blue">
+              <img src="Images/Our-Shop/8.avif" alt="">
+            </div>
+            <div class="ourshop-category">Protein</div>
+            <h3>WHEY PROTEIN POWDER</h3>
+            <p class="ourshop-productprice">Tk 49.99</p>
+            <div class="ourshop-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(30)</span>
+            </div>
+            <div class="ourshop-buttons">
+              <button class="ourshop-product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+              <button class="ourshop-buy-btn">Buy Now</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- RIGHT: Sidebar -->
+      <aside class="ourshop-shop-sidebar">
+
+        <div class="ourshop-sidebar-box">
+          <h4 class="ourshop-sidebar-title">FILTER BY PRICE</h4>
+          <input type="range" class="price-range" min="120" max="280" value="120" id="priceRange">
+          <p class="ourshop-price-text small-muted">Price: $120 - $280</p>
+          <button class="ourshop-filter-btn">FILTER</button>
+        </div>
+
+        <div class="ourshop-sidebar-box">
+          <h4 class="ourshop-sidebar-title">CATEGORIES</h4>
+          <ul class="ourshop-category-list">
+            <li><a href="#">Burners</a></li>
+            <li><a href="#">Fat Burners</a></li>
+            <li><a href="#">Medicine</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Protein</a></li>
+          </ul>
+        </div>
+
+        <div class="ourshop-sidebar-box">
+          <h4 class="ourshop-sidebar-title">LATEST PRODUCTS</h4>
+
+          <div class="ourshop-latest-product">
+            <img src="Images/Our-Shop/6.avif" alt="">
+            <div>
+              <p class="ourshop-product-name">Serious Mass 2KG</p>
+              <p class="ourshop-product-price">Tk 49.99</p>
+            </div>
+          </div>
+
+          <div class="ourshop-latest-product">
+            <img src="Images/Our-Shop/1.avif" alt="">
+            <div>
+              <p class="ourshop-product-name">Whey Protein Powder</p>
+              <p class="ourshop-product-price">Tk 49.99</p>
+            </div>
+          </div>
+
+          <div class="ourshop-latest-product">
+            <img src="Images/Our-Shop/5.avif" alt="">
+            <div>
+              <p class="ourshop-product-name">Serious Mass 2KG</p>
+              <p class="ourshop-product-price">Tk 49.99</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ourshop-sidebar-box">
+          <h4 class="ourshop-sidebar-title">PRODUCT TAGS</h4>
+          <div class="ourshop-tags">
+            <a href="#">medicine</a>
+            <a href="#">Protein</a>
+            <a href="#">Supplement</a>
+            <a href="#">Nutrition</a>
+            <a href="#">Fat Burners</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+        <!-- FOOTER SLICK SLIDER -->
+        <section class="footer-slider" aria-label="footer gallery">
+            <div class="bg"></div>
+            <div class="slider">
+                <!-- Use your real image file paths. These are sample names. -->
+                <div class="slide-wrap"><img src="Images/Image-Slider/1.avif" alt="img1"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/2.avif" alt="img2"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/3.avif" alt="img3"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/4.avif" alt="img4"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/5.avif" alt="img5"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/6.avif" alt="img6"></div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer class="footer">    
+            <img src="Images/Footer/left.avif" class="footerimg-left" alt="">
+            <img src="Images/Footer/right.avif" class="footerimg-right" alt="">
+            <div class="footer-container">
+                <!-- ABOUT/LOGO -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="Images/Footer/logo.webp" alt="Suxnix Logo">
+                    </div>
+                    <p>
+                        Making beauty especially relating complot especial common questions tend to recur through posts or queries
+                        standards vary orem donor command tei.
+                    </p>
+                </div>
+
+                <!-- ABOUT LINKS -->
+                <div class="footer-links">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Product</a></li>
+                    </ul>
+                </div>
+
+                <!-- SUPPORT LINKS -->
+                <div class="footer-links">
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="footer-contact">
+                    <h3>CONTACT US</h3>
+                    <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-phone"></i> +1 31-6555-0116
+                    </div>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-envelope"></i> Suxnix@example.com
+                    </div>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-globe"></i> www.suxnixdomain.com
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Suxnix All Rights Reserved.</p>
+                <img src="Images/Footer/payment.avif" alt="Payment Methods">
+            </div>
+        </footer>
+
+
+        <!-- scripts: jQuery first, then Slick -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
+        <!-- Loading the Java Script -->
+        <script src="script.js"></script>
+    </body>
+</html>

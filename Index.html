@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Images/Home/logo.webp" alt="Suxnix">
+            </div>
+
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="Index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Index.html">Home One</a></li>
+                        <li><a href="Index.html">Home Two</a></li>
+                        <li><a href="Index.html">Home Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="Index.html#features">Features</a></li>
+                <li><a href="Index.html#product">Product</a></li>
+                <li><a href="Index.html#ingredient">Ingredient</a></li>
+                <li><a href="Index.html#pricing">Pricing</a></li>
+                <li class="dropdown">
+                    <a href="#">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Ourshop.html">Our Shop</a></li>
+                        <li><a href="Shopdetail.html">Shop Details</a></li>
+                        <li><a href="Cart.html">Cart Page</a></li>
+                        <li><a href="Login.html">Login Page</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">News</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="OurBlog.html">Our Blog</a></li>
+                        <li><a href="Blogdetails.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <li class="cart-btn">
+                    <a href="#" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge">0</span>
+                    </a>
+                    
+                    <!-- Dropdown is INSIDE this li -->
+                    <div class="cart-dropdown">
+                        <p class="empty-text">Your cart is empty</p>
+                        <hr>
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span>Tk 0.00</span>
+                        </div>
+                        <a href="#" class="view-cart-btn" style="color: white; font-size: 15px;">VIEW CART</a>
+                        <a href="#" class="checkout-btn" style="color: white; font-size: 15px;">CHECKOUT</a>
+                    </div>
+                </li>
+                <a href="#" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="search-overlay" id="searchOverlay">
+                    <input type="text" placeholder="Enter your keyword..." class="search-input">
+                    <i class="fas fa-search search-icon-overlay"></i>
+                </div>
+                <div class="search-bg" id="searchBg"></div>
+
+                <a href="#" class="grid-icon">
+                    <i class="fa-solid fa-border-all" style="color:#fff;"></i>
+                </a>
+                
+                <!-- Overlay Background -->
+                <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+                <!-- Right Sidebar Menu -->
+                <div class="sidebar-menu" id="sidebarMenu">
+                    <button class="sidebar-close" id="sidebarClose">&times;</button>
+
+                    <div class="sidebar-content">
+                        <h2>GETTING ALL OF THE <span>NUTRIENTS</span> YOU NEED SIMPLY CANNOT BE DONE WITHOUT SUPPLEMENTS.</h2>
+                        <p>Nam libero tempore, cum soluta nobis eligendi cumque quod placeat facere possimus assumenda omnis dolor repellendu autem officiis</p>
+
+                        <h4>+1 599 162 4545<br> INFO@EXAMPLE.COM</h4>
+            
+                        <p style="margin-bottom: 0%;">5689 Lotaso Terrace, Culver City, CA, United States</p>
+
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MOBILE SIDEBAR MENU -->
+            <div class="mobile-sidebar" id="mobileSidebar">
+                <div class="sidebar-header">
+                    <h2>Menu</h2>
+                    <button id="closeSidebar" class="close-btn">&times;</button>
+                </div>
+
+                <ul class="sidebar-links">
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Home Style 1</a></li>
+                            <li><a href="#">Home Style 2</a></li>
+                            <li><a href="#">Home Style 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-title"><a href="#">Featured</a></li>
+                    <li class="dropdown-title"><a href="#">Products</a></li>
+                    <li class="dropdown-title"><a href="#">Ingredient</a></li>
+                    <li class="dropdown-title"><a href="#">Pricing</a></li>
+
+                    <!-- SHOP DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>Shop</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Shop Grid</a></li>
+                            <li><a href="#">Shop List</a></li>
+                            <li><a href="#">Single Product</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NEWS DROPDOWN -->
+                    <li class="dropdown-item">
+                        <div class="dropdown-title">
+                            <span>News</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Latest News</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Articles</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-title"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <img src="Images/Home/hero-left-leaf.webp" class="side-img left-leaf">
+                <h5 class="sub-heading">.. INCREASED ENERGY WITH SUXNIX ..</h5>
+                <h1 class="main-heading">
+                MIX PROTEIN PROVIDED WAY<br>
+                TO GROWTH
+                </h1>
+                <img src="Images/Home/hero-right-leaf.webp" class="side-img right-leaf">
+                <button class="shop-btn">Shop Now</button>
+            </div>
+
+            <div class="hero-arc">
+                <img src="Images/Home/hero-bottom-left.webp" alt="Powder" class="side-img left-img">
+                <img src="Images/Home/hero-background-img.webp" alt="Hero Arc" class="hero-arc">
+                <img src="Images/Home/hero-main-img.webp" alt="Whey Bottles" class="hero-bottles">
+                <img src="Images/Home/hero-bottom-right.webp" alt="Leaves" class="side-img right-img">
+            </div>
+        </section>
+
+        <!-- Brand Section -->
+        <section class="featured-brand">
+            <div class="brand-title">
+                <span class="line"></span>
+                <h2>PERFECT BRAND IS FEATURED ON</h2>
+                <span class="line"></span>
+            </div>
+
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <!-- 6 Original Logos -->
+                    <img src="Images/Brands/1.webp" alt="affirm">
+                    <img src="Images/Brands/2.webp" alt="Qlik">
+                    <img src="Images/Brands/3.webp" alt="Walmart">
+                    <img src="Images/Brands/4.webp" alt="Paysafe">
+                    <img src="Images/Brands/5.png" alt="Mollie">
+                    <img src="Images/Brands/6.webp" alt="Square">
+
+                    <!-- Duplicate 6 for seamless loop -->
+                    <img src="Images/Brands/1.webp" alt="affirm">
+                    <img src="Images/Brands/2.webp" alt="Qlik">
+                    <img src="Images/Brands/3.webp" alt="Walmart">
+                    <img src="Images/Brands/4.webp" alt="Paysafe">
+                    <img src="Images/Brands/5.png" alt="Mollie">
+                    <img src="Images/Brands/6.webp" alt="Square">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section" id="features">
+            <!-- Top Background -->
+            <div class="bg-top"></div>
+
+            <div class="featured-wrapper">
+                
+                <!-- Left Features -->
+                <div class="features">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-lemon icon"></i>
+                        <h3>Multi Fruits Flavour</h3>
+                        <p>A thing added to something else in order to complete or enhance it.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <i class="fa-solid fa-flask icon"></i>
+                        <h3>Flower Formula</h3>
+                        <p>A thing added to something else in order to complete or enhance it.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <i class="fa-solid fa-fish icon"></i>
+                        <h3>Fishbone Diagram</h3>
+                        <p>A thing added to something else in order to complete or enhance it.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <i class="fa-solid fa-fire icon"></i>
+                        <h3>100% Fat Blasting</h3>
+                        <p>A thing added to something else in order to complete or enhance it.</p>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="feature-image">
+                    <img src="Images/Feature/1.webp" alt="Product Bowl">
+                </div>
+            </div>
+
+            <!-- Bottom Background -->
+            <div class="bg-bottom"></div>
+        </section>
+        
+        <!-- Product Section -->
+        <section class="product-section" id="product">
+            
+            <!-- PRODUCT 1 -->
+            <div class="product-box product-1">
+                <div class="product-bg"></div>
+
+                <img class="prod1-leaf-left" src="Images/Product/background1.avif" alt="">
+                <img class="prod1-leaf-right" src="Images/Product/right1.webp" alt="">
+
+                <div class="product-content">
+                    <img class="product1-img" src="Images/Product/product1.webp" alt="">
+
+                    <div class="product-text">
+                        <h2>SERIOUS MASS</h2>
+                        <h4>High-strength, 5000IU</h4>
+                        <p>
+                            Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency.
+                            Low vitamin D levels cause depression, fatigue, and muscle weakness.
+                        </p>
+
+                        <div class="prod-price-box">
+                            <button class="prod-shop-btn">Shop Now</button>
+                            <span class="prod-price">$89.99</span>
+                            <span class="prod-old-price">$117.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-circle"></div>
+            </div>
+        
+            <!-- PRODUCT 2 -->
+            <div class="product-box product-2">
+                <div class="product-bg"></div>
+
+                <img class="prod2-leaf-left" src="Images/Product/background2.avif" alt="">
+                <img class="prod-leaf-left" src="Images/Product/left2.webp" alt="">
+
+                <div class="product2-content">
+                    <img class="product2-img" src="Images/Product/product2.webp" alt="">
+
+                    <div class="product-text">
+                        <h2>PROTEIN WHEY</h2>
+                        <h4>High-strength, 4000IU</h4>
+                        <p>
+                            Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency.
+                            Low vitamin D levels cause depression, fatigue, and muscle weakness.
+                        </p>
+
+                        <div class="prod-price-box">
+                            <button class="prod-shop-btn">Shop Now</button>
+                            <span class="prod-price">$59.99</span>
+                            <span class="prod-old-price">$79.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product-box product-3">
+                <div class="product-bg"></div>
+
+                <img class="prod3-leaf-left" src="Images/Product/background3.avif" alt="">
+                <img class="prod3-leaf-right" src="Images/Product/right3.webp" alt="">
+
+                <div class="product-content">
+                    <img class="product3-img" src="Images/Product/product3.webp" alt="">
+
+                    <div class="product-text">
+                        <h2>MAX MASS 3XL</h2>
+                        <h4>High-strength, 4000IU</h4>
+                        <p>
+                            Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency.
+                            Low vitamin D levels cause depression, fatigue, and muscle weakness.
+                        </p>
+
+                        <div class="prod-price-box">
+                            <button class="prod-shop-btn">Shop Now</button>
+                            <span class="prod-price">$69.99</span>
+                            <span class="prod-old-price">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-circle3"></div>
+            </div>
+        </section>
+        
+        <!-- Product Cards Section -->
+        <section class="product-cards">
+            <div class="card">
+                <div class="img-bg grey">
+                    <img src="Images/product-card/1.avif" alt="Serious Mass" />
+                </div>
+                <h3>ANTIAGING AND LONGEVITY</h3>
+                <p class="productprice">Tk 49.99</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(30)</span>
+                </div>
+                <div class="buttons">
+                    <button class="product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-bg green">
+                    <img src="Images/product-card/2.avif" alt="Amino Energy" />
+                </div>
+                <h3>BOX FULL OF MUSCLES</h3>
+                <p class="productprice">Tk 85.99</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(30)</span>
+                </div>
+                <div class="buttons">
+                    <button class="product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-bg purple">
+                    <img src="Images/product-card/3.avif" alt="Protein Whey" />
+                </div>
+                <h3>PROTEIN POWDER 2KG</h3>
+                <p class="productprice">Tk 85.99</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(30)</span>
+                </div>
+                <div class="buttons">
+                    <button class="product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-bg blue">
+                    <img src="Images/product-card/4.avif" alt="Whey Protein" />
+                </div>
+                <h3>WHEY PROTEIN POWDER</h3>
+                <p class="productprice">Tk 49.99</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(30)</span>
+                </div>
+                <div class="buttons">
+                    <button class="product-cart-btn"><i class="fa fa-shopping-basket"></i></button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+       <!-- Video Section -->
+        <section class="video-section">
+            <div class="video-container">
+
+                <!-- Background top (now div with image in CSS) -->
+                <div class="video-bg-top"></div>
+
+                <!-- Main background -->
+                <img src="Images/video/main-bacground.webp" alt="Workout Video" class="video-bg" />
+
+                <!-- Background bottom -->
+                <div class="video-bg-bottom"></div>
+
+                <!-- Play button -->
+                <div class="play-btn" id="playButton">
+                <a href="https://youtu.be/HQfF5XRVXjU"></a>
+                <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Video Modal -->
+            <div class="video-modal" id="VideoModal">
+                <div class="video-wrapper">
+                    <iframe id="YouTubeVideo" src="" title="Workout Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <span class="close-btn" id="closeVideo">&times;</span>
+            </div>
+
+            <img src="Images/video/left-leaf.avif" alt="Leaf" class="video-left-leaf">
+            <img src="Images/video/right-lef.avif" alt="Leaf" class="video-right-leaf">
+        </section>
+
+        <!-- stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="circle" data-percent="65">
+                        <svg>
+                           <circle cx="50" cy="50" r="45"></circle>
+                            <circle cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="number">65%</div>
+                    </div>
+                    <div class="text-content">
+                        <h3>ACTIVE MEMBERS</h3>
+                        <p>Yes we did it asap software</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="circle" data-percent="90">
+                        <svg>
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="number">90%</div>
+                    </div>
+                    <div class="text-content">
+                        <h3>PROJECTS DONE</h3>
+                        <p>Yes we did it asap software</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="circle" data-percent="80">
+                        <svg>
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="number">80%</div>
+                    </div>
+                    <div class="text-content">
+                        <h3>GET REWARDS</h3>
+                        <p>Yes we did it asap software</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ingridient Section -->
+        <section class="ingredients-section" id="ingredient">
+            <div class="ingredients-container">
+                <!-- LEFT IMAGE -->
+                <div class="ingredients-left">
+                    <img src="Images/Ingridient/background-leaf.avif" alt="Leaf" class="background-leaf">
+                    <img src="Images/Ingridient/main-img.webp" alt="Protein Whey" class="protein-img">
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="ingredients-right">
+                    <p class="subtitle">.. INCREASED ENERGY WITH SUXNIX ..</p>
+                    <h2 class="section-title">SUXNIX INGREDIENTS</h2>
+
+                    <div class="ingredients-grid">
+                        <div class="ingredient-box">
+                            <div class="hexagon">
+                                <img src="Images/Ingridient/1.webp" alt="">
+                            </div>
+                            <h3><span>|</span> HELPS YOU STICK TO YOUR DIET</h3>
+                            <p>A thing added to something else in order to complete or enhance it.</p>
+                        </div>
+
+                        <div class="ingredient-box">
+                            <div class="hexagon">
+                                <img src="Images/Ingridient/2.webp" alt="">
+                            </div>
+                            <h3><span>|</span> ONLY 3G NET CARBS IN EVERY JAR</h3>
+                            <p>A thing added to something else in order to complete or enhance it.</p>
+                        </div>
+
+                        <div class="ingredient-box">
+                            <div class="hexagon">
+                                <img src="Images/Ingridient/3.webp" alt="">
+                            </div>
+                            <h3><span>|</span> INGREDIENTS TO FUEL YOUR BODY</h3>
+                            <p>A thing added to something else in order to complete or enhance it.</p>
+                        </div>
+
+                        <div class="ingredient-box">
+                            <div class="hexagon">
+                                <img src="Images/Ingridient/4.webp" alt="">
+                            </div>
+                            <h3><span>|</span> CLEAN INGREDIENTS ONLY</h3>
+                            <p>A thing added to something else in order to complete or enhance it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formula Section -->
+        <section class="formula-section">
+            <!-- Background Layers -->
+            <div class="formula-background-top"></div>
+            <div class="formula-background-main"></div>
+            <div class="formula-background-bottom"></div>
+
+            <div class="formula-container">
+                <!-- LEFT CONTENT -->
+                <div class="formula-left">
+                    <p class="formula-subtitle">.. SUXNIX FORMULA ..</p>
+                    <h2 class="formula-title">WHY WE CHOSE THIS FORMULA</h2>
+
+                    <ul class="formula-list">
+                        <li><i class="fa-solid fa-angles-right"></i> Tastes like dessert without added sugars or sugar alcohols</li>
+                        <li><i class="fa-solid fa-angles-right"></i> No artificial sweeteners, dairy, soy or corn fiber</li>
+                        <li><i class="fa-solid fa-angles-right"></i> 10G of collagen protein from grass-fed cows</li>
+                        <li><i class="fa-solid fa-angles-right"></i> Formulated to reduce blood sugar intact</li>
+                        <li><i class="fa-solid fa-angles-right"></i> Organic almond Butter, Sunflower Lecithin</li>
+                        <li><i class="fa-solid fa-angles-right"></i> No energy crashes. Collagen Protein, Stevia</li>
+                    </ul>
+
+                    <a href="#" class="formula-btn">Know More</a>
+                </div>
+                <!-- RIGHT IMAGE -->
+                <div class="formula-right">
+                    <img src="Images/Formula/formula-img.webp" alt="Formula Image" class="formula-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-content">
+                <p class="pricing-subtitle">.. SUXNIX PLANS ..</p>
+                <h2 class="pricing-title">SUPPLEMENT PACKAGES</h2>
+
+                <div class="pricing-buttons">
+                    <button class="pricing-btn most-popular"> ★ MOST POPULAR ★ </button>
+
+                    <button class="pricing-btn best-value"> ✓ BEST VALUE </button>
+                </div>
+                <div class="pricing-cards">
+                    <!-- CARD 1 -->
+                    <div class="pricing-card">
+                        <h4 class="card-header">1 BOTTLE OF</h4>
+                        <h2 class="card-title">SUXNIX</h2>
+                        <p class="card-sub">(1 X 250 Veggie Caps Bottle)</p>
+
+                        <img src="Images/Pricing/1.avif" class="card-img1" alt="Bottle">
+
+                        <div class="card-price">
+                            <p class="price">$69</p> <p class="per">Per Bottle</p>
+                        </div>
+                        <div class="total">($69 TOTAL)</div>
+
+                        <p class="save">SAVE 14%</p>
+                        <p class="ship">+ Free Shipping</p>
+
+                        <button class="card-btn">
+                            BUY NOW
+                            <span class="guarantee">365 DAY FULL MONEY BACK GUARANTEED</span>
+                        </button>
+                    </div>
+
+                    <!-- CARD 2 (MOST POPULAR) -->
+                    <div class="pricing-card popular">
+
+                        <h4 class="card-header">1 BOTTLE OF</h4>
+                        <h2 class="card-title">SUXNIX</h2>
+                        <p class="card-sub">(1 X 250 Veggie Caps Bottle)</p>
+
+                        <img src="Images/Pricing/2.avif" class="card-img2" alt="Bottle">
+
+                        <div class="card-price">
+                            <p class="price">$69</p> <p class="per">Per Bottle</p>
+                        </div>
+                        <div class="total">($69 TOTAL)</div>
+
+                        <p class="save">SAVE 14%</p>
+                        <p class="ship">+ Free Shipping</p>
+
+                        <button class="card-btn">
+                            BUY NOW
+                            <span class="guarantee">365 DAY FULL MONEY BACK GUARANTEED</span>
+                        </button>
+                    </div>
+
+                    <!-- CARD 3 (BEST VALUE) -->
+                    <div class="pricing-card best">
+
+                        <h4 class="card-header">1 BOTTLE OF</h4>
+                        <h2 class="card-title">SUXNIX</h2>
+                        <p class="card-sub">(1 X 250 Veggie Caps Bottle)</p>
+
+                        <img src="Images/Pricing/3.avif" class="card-img3" alt="Bottle">
+
+                        <div class="card-price">
+                            <p class="price">$69</p> <p class="per">Per Bottle</p>
+                        </div>
+                        <div class="total">($69 TOTAL)</div>
+
+                        <p class="save">SAVE 14%</p>
+                        <p class="ship">+ Free Shipping</p>
+
+                        <button class="card-btn">
+                            BUY NOW
+                            <span class="guarantee">365 DAY FULL MONEY BACK GUARANTEED</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section">
+           <div class="background-main"></div>
+            <div class="testimonial-container">
+                <button class="arrow left" id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="slides-wrapper">
+                    <div class="slides">
+                        <!-- Slide 1 -->
+                        <div class="slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Becoming more involved in administration within the (MidMichigan) health system
+                                over the years, I had been researching options for further education that would
+                                assist in this transition and fit my busy schedule
+                            </p>
+                            <img src="Images/Testimonial/1.webp" alt="Profile" class="profile-img" />
+                            <h3 class="name">LAMPOR KOOPER</h3>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Becoming more involved in administration within the (MidMichigan) health system
+                                over the years, I had been researching options for further education that would
+                                assist in this transition and fit my busy schedule
+                            </p>
+                            <img src="Images/Testimonial/2.webp" alt="Profile" class="profile-img" />
+                            <h3 class="name">JANETA COOPER</h3>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Becoming more involved in administration within the (MidMichigan) health system
+                                over the years, I had been researching options for further education that would
+                                assist in this transition and fit my busy schedule
+                            </p>
+                            <img src="Images/Testimonial/3.webp" alt="Profile" class="profile-img" />
+                            <h3 class="name">MICHAEL MILLER</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right" id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                <div class="dots" id="dots"></div>
+            </div>
+        </section>
+
+        <!-- News and FAQs Section -->
+        <section class="news-faq-section">
+            <div class="news-faq-container">
+                <!-- LATEST NEWS -->
+                <div class="news-faq-latest-news">
+                    <p class="news-faq-section-subtitle">.. SUXNIX NEWS ..</p>
+                    <h2 class="news-faq-section-title">LATEST NEWS</h2>
+
+                    <div class="news-card">
+                        <img src="Images/News-FAQs/1.webp" alt="news">
+                        <div class="news-content">
+                            <div>
+                                <p class="category">business</p>
+                                <p class="date"><i class="fa-regular fa-clock"></i> January 16, 2025</p>
+                            </div>
+                            <h3>LABORIS NISI UT ALIQUIP EX EA COMMOD...</h3>
+                            <div>
+                                <p class="author">Posted by - <span>Web Developer</span></p>
+                                <div class="stats">
+                                    <i class="fa-regular fa-envelope"></i> 0
+                                    <i class="fa-regular fa-eye"></i> 0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <img src="Images/News-FAQs/2.webp" alt="news">
+                        <div class="news-content">
+                            <div>
+                                <p class="category">business</p>
+                                <p class="date"><i class="fa-regular fa-clock"></i> January 16, 2025</p>
+                            </div>
+                            <h3>ADIPISICING ELIT SED DO EIUSMOD TEMP...</h3>
+                            <div>
+                                <p class="author">Posted by - <span>Web Developer</span></p>
+                                <div class="stats">
+                                    <i class="fa-regular fa-envelope"></i> 0
+                                    <i class="fa-regular fa-eye"></i> 0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <img src="Images/News-FAQs/3.webp" alt="news">
+                        <div class="news-content">
+                            <div>
+                                <p class="category">design</p>
+                                <p class="date"><i class="fa-regular fa-clock"></i> January 16, 2025</p>
+                            </div>
+                            <h3>LOREM IPSUM DOLOR SIT AMET CONSECTE...</h3>
+                            <div>
+                                <p class="author">Posted by - <span>Web Developer</span></p>
+                                <div class="stats">
+                                    <i class="fa-regular fa-envelope"></i> 0
+                                    <i class="fa-regular fa-eye"></i> 0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="faq-section">
+                    <p class="section-subtitle">.. COMMON QUESTIONS ..</p>
+                    <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <div class="label">
+                                <span>01.</span> SUXNIX INGREDIENTS PROVIDES A SEARCHABLE ?
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div><div class="faq-answer">There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <div class="label">
+                                <span>02.</span> HOW TO EDIT SUXNIX THEMES ? 
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <div class="label">
+                                <span>03.</span> SUXNIX APP IS A POWERFUL APPLICATION ? 
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-answer">There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <div class="label">
+                                <span>04.</span> LATEST VERSION THOROUGH SUXNIX POWERFUL ? 
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-answer">There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <div class="label">
+                                <span>05.</span> HOW TO TRACK MY ORDER ? 
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-answer">There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SLICK SLIDER -->
+        <section class="footer-slider" aria-label="footer gallery">
+            <div class="bg"></div>
+            <div class="slider">
+                <!-- Use your real image file paths. These are sample names. -->
+                <div class="slide-wrap"><img src="Images/Image-Slider/1.avif" alt="img1"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/2.avif" alt="img2"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/3.avif" alt="img3"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/4.avif" alt="img4"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/5.avif" alt="img5"></div>
+                <div class="slide-wrap"><img src="Images/Image-Slider/6.avif" alt="img6"></div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer class="footer">    
+            <img src="Images/Footer/left.avif" class="footerimg-left" alt="">
+            <img src="Images/Footer/right.avif" class="footerimg-right" alt="">
+            <div class="footer-container">
+                <!-- ABOUT/LOGO -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="Images/Footer/logo.webp" alt="Suxnix Logo">
+                    </div>
+                    <p>
+                        Making beauty especially relating complot especial common questions tend to recur through posts or queries
+                        standards vary orem donor command tei.
+                    </p>
+                </div>
+
+                <!-- ABOUT LINKS -->
+                <div class="footer-links">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Product</a></li>
+                    </ul>
+                </div>
+
+                <!-- SUPPORT LINKS -->
+                <div class="footer-links">
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="footer-contact">
+                    <h3>CONTACT US</h3>
+                    <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-phone"></i> +1 31-6555-0116
+                    </div>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-envelope"></i> Suxnix@example.com
+                    </div>
+                    <div class="footer-contect-info">
+                        <i class="fa-solid fa-globe"></i> www.suxnixdomain.com
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Suxnix All Rights Reserved.</p>
+                <img src="Images/Footer/payment.avif" alt="Payment Methods">
+            </div>
+        </footer>
+
+
+        <!-- scripts: jQuery first, then Slick -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
+        <!-- Loading the Java Script -->
+        <script src="script.js"></script>
+    </body>
+</html>
